@@ -1,0 +1,69 @@
+:root {
+  --txt-color-01: #8F0034; /* Колір основного тексту */
+    --txt-color-02: #EE6497; /* Колір тексту зноски */
+    --header-color: #EE6497; /* Колір заголовків */
+    --header-color-02: #FFFFFF; /* Колір заголовків 2 */
+      --button-color: #FFFFFF; /* Колір кнопок-покликань */
+      --button-hover: #FFEF61; /* Колір при наведенні */
+      --bg-color-01: #EE6497; /* Колір фону 1 */
+      --bg-color-02: #FF89C7; /* Колір фону 2 */
+      --bg-color-03: #FFFFFF; /* Колір фону 3 */
+      --bg-color-04: #FFD6EB; /* Колір фону 4 */
+       --mob-padding: 28px; /* Відступи від контенту на смартфонах */
+             --max-width: 1600px;
+}
+
+html {
+    height: 100%;
+    color: #8F0034;
+}
+body {
+    font-family: "Kyiv*Type Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 16px; /* розмір основного тексту */
+    line-height: 1.1; /* міжрядковий інтервал */
+    font-style: normal;
+    color: var(--header-color-02);
+    background: linear-gradient(180deg, #ee6497 2%, #ff89c7 99%); 
+}
+
+em, i, .Regular2 {
+    font-style: normal;
+}
+
+.button {
+   font-family: "Kyiv*Type Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 100;
+   font-size: 25px;
+}
+
+h1 {
+font-family: 'Kudry Weird Headline';
+font-weight: 350;
+font-style: normal;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Mak", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 { font-size: 21.875rem;}
+h2 { font-size: 3rem; }
+h3 { font-size: 1.35rem; }
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Kudry Weird Headline';
+    src: url('../fonts/Kudry-WeirdHeadline.eot');
+    src: url('../fonts/Kudry-WeirdHeadline.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Kudry-WeirdHeadline.woff2') format('woff2'),
+        url('../fonts/Kudry-WeirdHeadline.woff') format('woff'),
+        url('../fonts/Kudry-WeirdHeadline.svg#Kudry-WeirdHeadline') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
