@@ -9,6 +9,8 @@
       --bg-color-02: #FF89C7; /* Колір фону 2 */
       --bg-color-03: #FFFFFF; /* Колір фону 3 */
       --bg-color-04: #FFD6EB; /* Колір фону 4 */
+      --bg-nav-1: #fff; 
+      --nav-color-1: #8F0034;
        --mob-padding: 28px; /* Відступи від контенту на смартфонах */
              --max-width: 1600px;
 }
@@ -16,54 +18,94 @@
 html {
     height: 100%;
     color: #8F0034;
+    scroll-behavior: smooth;
 }
 body {
-    font-family: "Kyiv*Type Sans", sans-serif;
+
+    font-family: "KyivType_Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 16px; /* розмір основного тексту */
-    line-height: 1.1; /* міжрядковий інтервал */
+    font-weight: bolder;
+    font-size: 24px; /* розмір основного тексту */
+    line-height: 1.2; /* міжрядковий інтервал */
     font-style: normal;
-    color: var(--header-color-02);
-    background: linear-gradient(180deg, #ee6497 2%, #ff89c7 99%); 
-}
-
-em, i, .Regular2 {
-    font-style: normal;
-}
-
-.button {
-   font-family: "Kyiv*Type Sans", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 100;
-   font-size: 25px;
+    color: var(#8F0034);
 }
 
 h1 {
 font-family: 'Kudry Weird Headline';
 font-weight: 350;
 font-style: normal;
+text-transform: uppercase;
 }
 
 .upper {
     text-transform: uppercase;
 }
 
-h2, h3, h4, h5, h6 {
+.highlight {
+    font-family: "Mak", sans-serif;
+    font-weight: bolder;
+}
+.note {
+    color: #EE6497;
+    -webkit-font-smoothing: antialiased;
+    font-family: "KyivType_Sans", sans-serif;
+    font-size: 18px;
+
+}
+
+.quote_small {
+    font-family: "Mak", sans-serif;
+    font-style: normal;
+    font-size: 46px;
+
+} 
+
+.quote_big {
+    font-family: 'Kudry Weird Headline';
+    font-size: 120px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+.quotes {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 5%;
+}
+
+h2, h3, h5 {
     font-family: "Mak", sans-serif;
     font-weight: 900;
     font-style: normal;
-    text-align: left;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 11%;
+    font-family: "Mak", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: flex;
+    text-transform: uppercase;
+    color: #EE6497;
+}
+
+h6 {
+    margin-top: 11%;
+font-family: "Mak", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: flex;
+    text-transform: uppercase;
+    color:#FFFFFF;
 }
 
 h1 { font-size: 21.875rem;}
 h2 { font-size: 3rem; }
 h3 { font-size: 1.35rem; }
-
-
-
-
-
-
-
-
+h4 { font-size: 9.125rem; }
+h6 { font-size: 9.125rem; }

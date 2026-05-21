@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Kyiv*Type Serif';
+    src: url('KyivTypeSerif.eot');
+    src: url('KyivTypeSerif.eot?#iefix') format('embedded-opentype'),
+        url('KyivTypeSerif.woff2') format('woff2'),
+        url('KyivTypeSerif.woff') format('woff'),
+        url('KyivTypeSerif.svg#Kyiv*TypeSerif') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
