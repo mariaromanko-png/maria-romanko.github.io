@@ -84,12 +84,6 @@ gap: 10px;
     margin-bottom: 5%;
 }
 
-#s5 p {
-  max-width: 646px;
-  position: relative;
-    z-index: 2;
-}
-
 .back-svg {
   position: absolute;
   top: 50%;
@@ -131,9 +125,8 @@ background: linear-gradient(180deg, #ff89c7 0%, #ffd6e7 100%);
 #s3 {
 position: relative;
   min-height: 100vh;
-  align-items: center;
   overflow: hidden;
-background: linear-gradient(180deg, #ffd6e7 0%, #fff 100%);
+  background: linear-gradient(180deg, #ffd6e7 0%, #fff 100%);
 }
 
 #s4 {
@@ -146,9 +139,9 @@ background: #fff;
 #s5 {
   position: relative;
   min-height: 100vh;
-  align-items: center;
   overflow: hidden;
-background: linear-gradient(180deg, #fff 0%, #ff89c7 100%);
+  background: linear-gradient(180deg, #fff 0%, #ff89c7 100%);
+  padding-bottom: 80px; /* Додаємо відступ знизу, щоб цитати не тулилися до кінця секції */
 }
 
 .img1 {
@@ -162,6 +155,16 @@ background: linear-gradient(180deg, #fff 0%, #ff89c7 100%);
     transform: translateZ(0);
 }
 
+/* .img2 {
+  margin-top: 11%;
+    position: absolute;
+    left: 175px;
+    width: 500px;
+    height: auto;
+    display: block;
+    transform: translateZ(0);
+} */
+
 .img3 {
   margin-top: 2%;
     position: absolute;
@@ -173,12 +176,112 @@ background: linear-gradient(180deg, #fff 0%, #ff89c7 100%);
     transform: translateZ(0);
 }
 .img4 {
-  margin-top: 2%;
+  position: absolute;
+  left: 0;
+  top: 10%; /* Можна підкрутити відсоток, щоб вона красиво стала по висоті */
+  width: 600px;
+  height: auto;
+  display: block;
+  z-index: 1; /* За контентом */
+}
+
+/* Слайдер зліва: додаємо відступ зліва (146px) для симетрії з текстом */
+#s3 .slides {
+  position: absolute;
+  left: 50px;            
+  top: 10vh;             
+  width: 45vw;           
+  height: 75vh;          
+  overflow: hidden;
+  z-index: 1;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Текст справа: прибираємо flex: 1, щоб він слухався padding-right: 146px */
+#s3 .inside_right {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  padding-right: 146px;  /* Твій фірмовий відступ від правого краю */
+  gap: 20px;
+  text-align: right;
+}
+
+/* Оскільки параграфи мають велику ширину, перевизначаємо їх для цієї секції */
+#s3 .inside_right p {
+  width: 100%;
+  max-width: 646px;
+  text-align: right;
+}
+
+#s3 p {
+  max-width: 646px;      /* Твоє обмеження ширини тексту */
+  width: 100%;
+}
+
+#s5 .inside_right {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  padding-right: 146px;  /* Твій фірмовий відступ від правого краю */
+  gap: 20px;
+  text-align: right;
+}
+
+#s5 .inside_right p {
+  width: 100%;
+  max-width: 646px;
+  text-align: right;
+}
+
+/* Стилі для самих слайдів та анімації */
+.slide {
     position: absolute;
-    left: 0;
-    top: 0px;
-    width: 600px;
-    height: auto;
-    display: block;
-    transform: translateZ(0);
+  opacity: 0;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Запускаємо анімацію тривалістю 12 секунд */
+  animation: slide-show 12s infinite;
+}
+
+.slide.slide2 {
+  animation-delay: 4s;
+}
+
+.slide.slide3 {
+  animation-delay: 8s;
+}
+
+.slide img {
+  width: auto;
+  height: auto;
+  max-width: 85%;       
+  max-height: 85%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Анімація слайд-шоу (ідеальний таймінг для 3-х слайдів) */
+@keyframes slide-show {
+  0% {
+    opacity: 0;
+  }
+  5%, 33% {    /* Слайд швидко з'являється і тримається третину часу */
+    opacity: 1;
+  }
+  38%, 100% {  /* Плавно зникає і чекає свого наступного кола */
+    opacity: 0;
+  }
 }

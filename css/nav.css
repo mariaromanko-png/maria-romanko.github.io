@@ -77,8 +77,9 @@ nav .navbar {
 .navigation a {
     display: block;
     color: var(--nav-color-1);  /* Основний колір меню */
-    font-size: .9rem;           /* Розмір тексту меню */
-    /* font-weight: 840;  */     /* Накреслення тексту меню */
+    font-size: .99rem;           /* Розмір тексту меню */
+    font-family: Mak, sans-serif;
+     font-weight: bolder;     /* Накреслення тексту меню */
     letter-spacing: .025em;
     padding: 31px 0;
     margin-left: 16px;
@@ -176,8 +177,7 @@ a:hover, a:focus, a:active {
    text-transform: uppercase;
    text-decoration: none;
    color: #FFFFFF;
-   text-shadow: 0 0 17.4px #CF185B;
-   text-shadow: 0 0 10px #CF185B;
+   text-shadow: 0 0 15px #FF89C7;
    transition: all 300ms ease;
 }
 

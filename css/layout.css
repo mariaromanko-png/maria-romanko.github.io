@@ -56,28 +56,48 @@ text-transform: uppercase;
 }
 
 .quote_small {
-    font-family: "Mak", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 46px;
-    margin-top: 5%;
-
-} 
+  font-family: "Mak", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 46px;
+  text-align: center;        /* Центруємо текст */
+  width: 100%;               /* Займає весь рядок */
+  margin: 0;                 /* Прибираємо старий margin-top: 5%, тепер за це відповідає gap */
+  text-shadow: 0px 2px 3px rgba(147, 47, 84, 0.25);
+}
 
 .quote_big {
-    font-family: 'Kudry Weird Headline';
-    font-size: 90px;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    color:#FFFFFF;
+  font-family: 'Kudry Weird Headline';
+  font-size: 90px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;        /* Центруємо текст */
+  width: 100%;               /* Займає весь рядок */
+  color: #FFFFFF;
+  text-shadow:
+    0px 0px 30px rgba(255, 255, 255, 0.75), 0px 0px 7px rgba(255, 255, 255, 0.75);
 }
+
 .quotes {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    margin-top: 2%;
+  width: 100%;
+  max-width: 1400px;        
+  margin: 180px auto 0 auto; /* auto по боках вирівняє цей блок чітко по центру сторінки */
+  display: flex;
+  flex-direction: column;    
+  align-items: center;       
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  gap: 0px;                 
+}
+
+.quotes p {
+  margin: 0;
+  padding: 0;
+  max-width: none !important; /* Дозволяє тексту розпрямитися на всю ширину */
+  width: 100%;
+  text-align: center;
 }
 
 h2, h3, h5 {
